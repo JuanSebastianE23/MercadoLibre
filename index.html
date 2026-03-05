@@ -9,6 +9,91 @@
 
 <body>
 
+  <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="display:inline;vertical-align:middle;margin-right:6px">
+        <circle cx="9" cy="9" r="7" fill="#1259C3"/><circle cx="17" cy="15" r="5" fill="#FFE600"/>
+      </svg>
+      <span class="logo-merca">Merca</span><span class="logo-libre">Libre</span>
+    </a>
+
+    <div class="search-bar">
+      <select class="search-category" id="searchCategory">
+        <option>Todos</option>
+        <option>Electrónica</option>
+        <option>Moda</option>
+        <option>Hogar</option>
+        <option>Deportes</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Buscar productos, marcas y más..."/>
+      <button onclick="buscarProducto()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nav-links">
+      <div class="nav-user-menu">
+        <a href="#" class="nav-user-btn">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Ingresa
+        </a>
+        <div class="user-dropdown">
+          <a href="#">👤 Mi cuenta</a>
+          <a href="#">📦 Mis compras</a>
+          <a href="#">❤️ Favoritos</a>
+          <div class="dropdown-divider"></div>
+          <a href="#">Crear cuenta</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-sell">
+        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="margin-right:5px">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        Vende
+      </a>
+
+      <a href="#" class="nav-cart" id="cartBtn" onclick="toggleCart(event)">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mini carrito desplegable -->
+  <div class="mini-cart" id="miniCart">
+    <p class="mini-cart-title">🛒 Tu carrito</p>
+    <div id="miniCartItems"><p class="empty-cart">Aún no agregaste productos</p></div>
+    <div class="mini-cart-footer">
+      <span>Total: <strong id="cartTotal">$0</strong></span>
+      <button class="btn-checkout">Comprar ahora</button>
+    </div>
+  </div>
+
+  <div class="nav-cats">
+    <a href="#"><span>⚡</span> Electrónica</a>
+    <a href="#"><span>👗</span> Moda</a>
+    <a href="#"><span>🏠</span> Hogar</a>
+    <a href="#"><span>⚽</span> Deportes</a>
+    <a href="#"><span>🧸</span> Juguetes</a>
+    <a href="#"><span>🚗</span> Autos</a>
+    <a href="#"><span>🏢</span> Inmuebles</a>
+    <a href="#"><span>🛠️</span> Servicios</a>
+    <a href="#portafolio" class="nav-cats-special"><span>👥</span> Nuestro equipo</a>
+  </div>
+</nav>
   <!-- NAVBAR -->
   <nav class="navbar">
     <h1>MercadoLibre</h1>
@@ -79,6 +164,31 @@
 
     <div class="dev-container">
 
+      <!--PORTAFOLIO DEV 2 -->
+
+<div class="dev-card">
+
+  <img src="https://via.placeholder.com/100">
+
+  <h3>Juan Sebastian Estacio</h3>
+
+  <p>Desarrollador Frontend en formación apasionado por crear interfaces web modernas.</p>
+
+  <h4>Servicios</h4>
+
+  <ul>
+    <li>Desarrollo de páginas web</li>
+    <li>Diseño de interfaces UI</li>
+    <li>Landing pages</li>
+  </ul>
+
+  <h4>Tecnologías</h4>
+
+  <p>HTML, CSS, JavaScript, Git, GitHub</p>
+
+  <a href="https://github.com/JuanSebastianE23">Mi GitHub</a>
+
+</div>
       <div class="dev-card">
         <img src="https://via.placeholder.com/100">
         <h3>Desarrollador 1</h3>
